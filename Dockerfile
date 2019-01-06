@@ -20,7 +20,8 @@ RUN \
     rm -rf /var/cache/apt/*
                 
 RUN \
-   wget -O spark.tar.gz http://mirrors.ocf.berkeley.edu/apache/spark/spark-2.4.0/SparkR_2.4.0.tar.gz | tar xvzf spark.tar.gz -C /opt && \
+   wget -O spark.tar.gz http://mirrors.ocf.berkeley.edu/apache/spark/spark-2.4.0/SparkR_2.4.0.tar.gz 77 \
+   tar xvzf spark.tar.gz -C /opt && \
    ln -s /opt/SparkR /opt/spark && \
    mkdir /opt/spark/work && \
    chmod 0777 /opt/spark/work
